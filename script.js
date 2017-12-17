@@ -31,19 +31,68 @@
 //     console.log(`Player3, win with the score ${scoreP3}`);
 // }
 
-var names = ['Victor', 'John', 'Mary'];
-var years = new Array (1990, 1999, 2002);
+//Array lecture
 
-console.log(names);
+// var names = ['Victor', 'John', 'Mary'];
+// var years = new Array (1990, 1999, 2002);
 
-var john = ['John', 'Smith', 1990, 'designer', 'false']
+// console.log(names);
 
-john.push('Blue');
-john.unshift('Mr');
+// var john = ['John', 'Smith', 1990, 'designer', 'false']
 
-console.log(john);
+// john.push('Blue');
+// john.unshift('Mr');
 
-//IndexOf returns -1 if the array not contains 'teacher', and 1 if contains
-if (john.indexOf('teacher') === -1) {
-    console.log('John is not a teacher');
-}
+// console.log(john);
+
+// //IndexOf returns -1 if the array not contains 'teacher', and 1 if contains
+// if (john.indexOf('teacher') === -1) {
+//     console.log('John is not a teacher');
+// }
+
+// var john = {
+//     name : 'John',
+//     lastName : 'Smith',
+//     yearOfBirth : 1990,
+//     job : 'teacher',
+//     isMarried : false,
+//     family : ['Jane', 'Mark', 'Bob'],
+//     calculateAge : function(){
+//         this.age = 2016 - this.yearOfBirth;
+//     }
+// }
+
+// john.calculateAge();
+// console.log(john);
+
+function printFullAge(params) {
+  
+    var array2 = new Array;
+    var fullAges = new Array;
+
+    const currentlyYear = 2017;
+    
+    params.forEach(element => {
+        array2.push(2017 - element);
+    });
+    
+    params.forEach(element => {
+        if(currentlyYear - element >= 18){
+            console.log(element);
+            fullAges.push(true);
+        } else {
+            fullAges.push(false);
+        }
+    });
+
+    return fullAges;
+
+};
+
+var years = [1995, 1989, 2010, 2015, 2000, 1998];
+
+var full_1 = printFullAge(years);
+var full_2 = printFullAge([1999, 1987]);
+
+console.log(full_1);
+console.log(full_2);
