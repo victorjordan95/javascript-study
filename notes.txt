@@ -1,9 +1,17 @@
 Notes from lectures
 
-THE 'THIS' VARIABLE
+----- THE 'THIS' VARIABLE ----- 
 
 - Regular function call : the 'this' keyword points at the global object (the window object, in the browser);
 
 - Method call : the 'this' variable points to the object that is calling the method;
 
 OBS: The this keyword is not assigned a value until a function where it is defined is a actually called;
+
+----- EVENTS ----- 
+
+Events: Notifications that are sent to notify the code that something happened on the webpage;
+
+    Ex: Clicking a button, resizing a window, scrolling down or pressing a key;
+
+Event Listener: A function that performs an action based on a certain event. It waits for a specific event to happen;
