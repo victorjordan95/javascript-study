@@ -42,4 +42,9 @@ Javascript is a prototype-based language, which means that inheritance works by 
 
     - We can return a function from a function;
 
-And is we say JS is first-class
+And is why we say JS is first-class
+
+----- CLOSURES -----
+
+An inner function has always access to the variables and parameters of its outer
+function, even after the outer function has returned;
