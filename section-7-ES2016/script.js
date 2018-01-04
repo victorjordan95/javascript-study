@@ -73,7 +73,7 @@ console.log(ages.findIndex(cur => cur >= 18));
 //---------------------------------------------------//
 
 // Lecture : Spread operator
-
+/*
 function addFourAges(a,b,c,d) {
     return a + b + c + d;
 }
@@ -95,3 +95,62 @@ const boxes = document.querySelectorAll('.box');
 const all = [h, ...boxes];
 
 Array.from(all).forEach(cur => cur.style.color = 'purple');
+*/
+
+//---------------------------------------------------//
+//Lecture : Rest Parameters
+
+//ES6
+/*
+function isFullAge6(limit, ...years){
+
+    years.forEach(cur => console.log((2016 - cur) >= limit));
+
+}
+
+isFullAge6(16, 1990, 1999, 1965);
+*/
+
+//---------------------------------------------------//
+//Lecture : Default parameters
+
+/*
+function SmithPerson( firstName, yearOfBirth, lastName = 'Smith', nacionality = 'american'){
+    this.firstName = firstName;
+    this.yearOfBirth = yearOfBirth;
+    this.lastName = lastName;
+    this.nacionality = nacionality;
+}
+
+let john = new SmithPerson('Victor', 1995);
+*/
+
+//---------------------------------------------------//
+//Lecture : Maps
+/*
+const question = new Map();
+question.set('question', 'What is the official name of the latest major js version?');
+question.set(1, 'ES5');
+question.set(2, 'ES6');
+question.set(3, 'ES2015');
+question.set('correct', 3);
+question.set(true, 'Correct answer :D');
+question.set(false, 'wrong, try again!');
+
+console.log(question.get('question'));
+
+for (let [key, value] of question.entries()) {
+    if (typeof(key) === 'number') {
+        console.log(`This is ${key}, and it's set to ${value}`);
+    }
+}
+
+const ans = parseInt(prompt('write the correct answer'));
+
+console.log(question.get(ans === question.get('correct')));
+*/
+
+//---------------------------------------------------//
+//Lecture : Classes
+
+
